@@ -1,0 +1,15 @@
+{
+  "id": "RULE-001",
+  "name": "Outlook Spawning Shell",
+  "rule_type": "parent_child",
+  "description": "Microsoft Outlook spawning command shell - possible phishing payload execution",
+  "severity": "high",
+  "enabled": true,
+  "parent_process": "outlook\\.exe",
+  "child_process": "cmd\\.exe|powershell\\.exe|wscript\\.exe|cscript\\.exe",
+  "command_line_pattern": null,
+  "command_line_contains": null,
+  "max_events_per_minute": null,
+  "time_window_minutes": 1,
+  "risk_score": 80
+}
